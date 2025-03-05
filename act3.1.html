@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="form">
+        <h2>Survey Form</h2>
+        <form id="surveyForm" action="success1.html" method="get">
+        <h3>Section 1</h3>
+        <label>1.1 Which of the following do you use</label><br>
+        <input type="checkbox" name="service1"> Service 1
+        <input type="checkbox" name="service2"> Service 2<br>
+        <input type="checkbox" name="service3"> Service 3
+        <input type="checkbox" name="service4"> Service 4<br>
+        <input type="checkbox" name="other"> Other: <input type="text" name="others"><br><br>
+
+
+        <label>1.2 How would you rate our services with our service in term of</label>
+        <table>
+            <tr>
+                <th></th>
+                <th>Excellent</th>
+                <th>Very Good</th>
+                <th>Good</th>
+                <th>Fair</th>
+                <th>Poor</th>
+            </tr>
+            <tr>
+                <td>Your Overall Experience:</td>
+                <td><input type="radio" name = "exp" value = "Excellent"></td>
+                <td><input type="radio" name = "exp" value = "Very Good"></td>
+                <td><input type="radio" name = "exp" value = "Good"></td>
+                <td><input type="radio" name = "exp" value = "Fair"></td>
+                <td><input type="radio" name = "exp" value = "Poor"></td>
+            </tr>
+            <tr>
+                <td>The Value of our service:</td>
+                <td><input type="radio" name = "val" value = "Excellent"></td>
+                <td><input type="radio" name = "val" value = "Very Good"></td>
+                <td><input type="radio" name = "val" value = "Good"></td>
+                <td><input type="radio" name = "val" value = "Fair"></td>
+                <td><input type="radio" name = "val" value = "Poor"></td>
+            </tr>
+            <tr>
+                <td>Promptness of our service:</td>
+                <td><input type="radio" name = "prompt" value = "Excellent"></td>
+                <td><input type="radio" name = "prompt" value = "Very Good"></td>
+                <td><input type="radio" name = "prompt" value = "Good"></td>
+                <td><input type="radio" name = "prompt" value = "Fair"></td>
+                <td><input type="radio" name = "prompt" value = "Poor"></td>
+            </tr>
+            <tr>
+                <td>The Courtesy of our staff:</td>
+                <td><input type="radio" name = "court" value = "Excellent"></td>
+                <td><input type="radio" name = "court" value = "Very Good"></td>
+                <td><input type="radio" name = "court" value = "Good"></td>
+                <td><input type="radio" name = "court" value = "Fair"></td>
+                <td><input type="radio" name = "court" value = "Poor"></td>
+            </tr>
+        </table><br>
+        <label>1.3 Any comments or suggestion</label><br>
+        <textarea name = "feedback" rows = "4" cols = "50"></textarea><br><br>
+
+        <h3>Section 2</h3>
+        <label>2.1 How may we reach you? (optional)</label><br>
+        Your Name: <textarea name = "name" rows = "1" cols = "50"></textarea><br>
+        Phone: <textarea name = "phone" rows = "1" cols = "50"></textarea><br>
+        Email: <textarea name = "email" rows = "1" cols = "50"></textarea><br><br>
+        <div class = "btns">
+            <button type = "submit">Submit</button>
+            <button type = "reset">Reset</button>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
